@@ -1,0 +1,151 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar__link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar__link:hover {
+    text-decoration: underline;
+}
+
+/* Seção de Apresentação */
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.apresentacao__conteudo {
+    flex: 1;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    color: #003366;
+}
+
+.titulo-destaque {
+    color: #3CB371;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Links */
+.apresentacao__links {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.apresentacao__links__link {
+    background: linear-gradient(90deg, #1ABC9C, #16A085);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.apresentacao__links__link:hover {
+    background: #16A085;
+    transform: translateY(-2px);
+}
+
+/* Imagem */
+.apresentacao__imagem img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+.footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer span {
+    color: red;
+}
+ /* Outros estilos principais do CSS */
+
+/* Ajustes de Responsividade */
+@media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .apresentacao__imagem {
+        margin-top: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #projetos {
+    margin: 40px;
+}
+
+#projetos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#projetos li {
+    margin-bottom: 10px;
+}
+
+#projetos a {
+    color: #1ABC9C;
+    text-decoration: none;
+}
+
+#projetos a:hover {
+    text-decoration: underline;
+}
+
+}
