@@ -42,11 +42,12 @@ body {
 /* Seção de Apresentação */
 .apresentacao {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 20px;
     gap: 20px;
 }
+
 
 .apresentacao__conteudo {
     flex: 1;
@@ -73,7 +74,11 @@ body {
     margin-top: 20px;
 }
 
+/* Seção Redes Sociais */
 .apresentacao__links__link {
+    display: flex;  /* Ativa o alinhamento dos ícones */
+    align-items: center; /* Centraliza o ícone e o texto */
+    gap: 12px; /* Espaço entre o ícone e o texto */
     background: linear-gradient(90deg, #1ABC9C, #16A085);
     color: white;
     text-decoration: none;
@@ -81,7 +86,15 @@ body {
     border-radius: 5px;
     font-weight: bold;
     transition: all 0.3s ease;
+    justify-content: center; /* Centraliza o conteúdo dentro do botão */
 }
+
+/* Ajuste para os ícones dentro dos botões */
+.apresentacao__links__link img {
+    width: 20px;  /* Define o tamanho dos ícones */
+    height: 20px;
+}
+
 
 .apresentacao__links__link:hover {
     background: #16A085;
